@@ -42,6 +42,11 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "10kb",
                   "maximumError": "8kb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "name": "src/app/MyComp/word-cloud/word-cloud.component.css",
+                  "maximumError": "5kb"
                 }
               ],
               "outputHashing": "all"
