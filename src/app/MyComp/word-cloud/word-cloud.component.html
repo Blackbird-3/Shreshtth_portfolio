@@ -1,6 +1,6 @@
 <div #container class="container"></div>
 <nav>
-<div class="logo">
+<div class="logo" (click)="homeclick()">
 <!-- <img src="../assets/s3d_logo_favicon.ico" alt="logo"> -->
 <img src="../assets/s3d_logo.png" alt="logo">
 </div>
@@ -8,10 +8,43 @@
       About Me
 
     </div>
-  <div></div></nav>
-<div class="maingrid">
-  <div class="griditems">
+    <div></div>
+  </nav>
+<div class="main">
+  <div class="items">
+    <div class="text">
+      <div class="myCard">
+        <div class="innerCard">
+            <div class="frontSide">
+                <!-- <p class="title">FRONT SIDE</p> -->
+                <p>19 year old student, seeking opportunities to learn, grow and utilize my skills and gain real-world experience.</p>
+            </div>
+            <div class="backSide">
+                <p class="title">BACK SIDE</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="mypic">
+      <img src="../assets/samplepic.jpg" alt="">
+    </div>
 
   </div>
 </div>
+<footer>
+  <div class="projlink" (click)="projclick()">
+    <div class="links">View my projects</div>
+</div>
+<div class="cvlink" (click)="cvclick()">
+  <button class="bn" >Resume &nbsp;<i class="fa fa-thin fa-download"></i>   </button>
+  <a download="Shreshtth's Resume.pdf" href="../assets/Shreshtth's Resume.pdf">
+
+  </a>
+</div>
+<div class="conlink" (click)="contactclick()">
+  <div class="links">Contact Me</div>
+</div>
+</footer>
 

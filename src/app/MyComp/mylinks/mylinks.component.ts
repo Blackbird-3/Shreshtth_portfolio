@@ -1,7 +1,4 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import gsap from "gsap";
-import Glide from '@glidejs/glide';
-
 
 @Component({
   selector: 'app-mylinks',
@@ -10,13 +7,14 @@ import Glide from '@glidejs/glide';
 })
 export class MylinksComponent implements OnInit{
 
-  constructor() {}
-  ngAfterViewInit() {
-    new Glide('.glide').mount();
+  homeclick(){
+    window.location.href = '/home';
+      return; // Stop further processing
   }
+  constructor() {}
 
   ngOnInit(): void {
-
+  console.log("Hey There i'm glad you liked the site and want to see whats going on, check the repo at https://github.com/Blackbird-3");
   }
   @ViewChild('cursor') refCursor!: ElementRef<HTMLDivElement>;
 

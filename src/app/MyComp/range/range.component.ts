@@ -18,6 +18,7 @@ import { Router } from '@angular/router';
 export class RangeComponent implements OnInit{
 
   ngOnInit(): void {
+    console.log("Hey There i'm glad you liked the site and want to see whats going on, check the repo at https://github.com/Blackbird-3");
 
 
     const scene = new THREE.Scene();
@@ -233,15 +234,15 @@ function onClick(event: MouseEvent) {
   // Check if the crate is clicked
   for (const intersect of intersects) {
     if (intersect.object === crate1) {
-      window.location.href = '/wordcloud';
+      window.location.href = '/about';
       return; // Stop further processing
     }
     if (intersect.object === crate2) {
-      window.location.href = '/skills';
+      window.location.href = '/projects';
       return; // Stop further processing
     }
     if (intersect.object === crate3) {
-      window.location.href = '/links';
+      window.location.href = '/contact';
       return; // Stop further processing
     }
   }

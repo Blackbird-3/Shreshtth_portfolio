@@ -7,6 +7,7 @@ import { SkillsComponent } from './MyComp/skills/skills.component';
 import { WordCloudComponent } from './MyComp/word-cloud/word-cloud.component';
 import { MylinksComponent } from './MyComp/mylinks/mylinks.component';
 import { RangeComponent } from './MyComp/range/range.component';
+import { HomeComponent } from './MyComp/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RangeComponent } from './MyComp/range/range.component';
     SkillsComponent,
     WordCloudComponent,
     MylinksComponent,
-    RangeComponent
+    RangeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
