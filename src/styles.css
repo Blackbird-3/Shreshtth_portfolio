@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body
+{
+  background-color: #161617;
+  color: white;
+  overflow: hidden;
+  /* -webkit-overflow-scrolling: touch; */
+}
+::selection {
+  color: black;
+  background: white;
+}
+/* .scrollable-element {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* Add any additional styles specific to your element
+} */
+

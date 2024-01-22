@@ -1,0 +1,9 @@
+p
+{
+  background-color: gray;
+}
+canvas{
+  position: fixed;
+  top: 100px;
+  left: 0;
+}

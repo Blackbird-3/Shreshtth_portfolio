@@ -1,0 +1,59 @@
+.main{
+display: grid;
+}
+
+ul{
+list-style-type: none;
+bottom: 0px;
+position: fixed;
+}
+li{
+  margin: 1rem;
+  font-size: 2rem;
+bottom: 0;
+-webkit-text-stroke: .1px white;
+   color: transparent;
+}
+.card {
+  /* width: 190px; */
+  /* height: 254px; */
+  /* background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%); */
+  border-radius: 12px;
+  transition: all .3s;
+ }
+
+
+
+ .card:hover {
+  box-shadow:
+  /* 0px 0px 30px 1px rgba(43, 191, 250, 0.9); */
+  0 0 10px #00eeff, 0 0 25px #001eff, 0 0 50px #00d9ff;
+ }
+.cursor{
+  z-index: -10;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: .15rem solid rgb(0, 255, 255);
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 32s;
+}
+.cursor::before{
+  position: absolute;
+  content: '';
+  background: rgb(0, 255, 255);
+  height: .4rem;
+  width: .4rem;
+  border-radius: 50%;
+  top: 45%;
+  left: 42%;
+  transform: translate (-50%, -50%);
+}
+@media only screen and (min-width: 768px) {
+  .cursor {
+    display: block; /* Show the mouse follower on desktop devices */
+  }
+}
